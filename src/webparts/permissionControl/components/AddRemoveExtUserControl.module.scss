@@ -1,0 +1,84 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.ModalContainer {
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    flex-flow: row;   
+    flex-wrap: wrap;
+    justify-content:space-between;   
+  }
+  .innerContainer{
+    padding:10px;
+    overflow: auto;
+  }
+  
+  // .stickyContainer {
+  //   width: 80vw;
+  //   display: flex;
+  //   flex-flow: column nowrap;
+  //   align-items: stretch;
+  // }
+  
+.headerRow {
+    //flex: 1 1 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: $ms-color-themePrimary;
+    color: #fff;    
+    align-items: center;
+    @include ms-font-l;
+    @include ms-fontWeight-semibold;
+    padding: 0 5px;
+    min-height: 40px;
+  }
+  
+.bodyRow {
+    flex: 4 4 auto;
+    padding: 5px 28px;
+    //overflow-y: hidden;
+  }
+  
+.item{
+  margin-top: 10px;
+  margin: 5px;
+}
+  .columns{
+    padding-top: 1%;
+      width:49.5%;
+      display:inline-block;
+      height:50%;
+    //overflow:hidden;
+    padding-bottom: 10%;
+  }
+  .buttonSize{
+    width: 150px;
+    height: 50px;
+  }
+  
+  .buttonContainer{
+    display: flex;  
+    flex-direction: row;
+    justify-content: flex-end;   
+    margin-top: 10px;
+  }
+  
+  .messageSuccess {
+   // padding: 20px;
+   // background-color: #195c0586;
+    color: green;
+    //text-align: center;
+  }
+  .messageFailure {
+    //padding: 20px;
+   // background-color: #195c0586;
+    color: red;
+   // text-align: center;
+  }
+
+  .close{
+   
+    justify-content: flex-end;
+    //float: right;
+  }

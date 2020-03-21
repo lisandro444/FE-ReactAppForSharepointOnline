@@ -1,0 +1,49 @@
+@import "~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss";
+
+.navControl {
+  .container {
+    max-width: 250px;
+   // margin: 0px auto;
+    //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+   // overflow-Y: 'auto';
+    //word-wrap: break-word;
+  }
+  .container1{    
+      root: {
+        width: 225;              
+        boxSizing: 'border-box';
+        border: '1px solid #eee';
+        overflowY: 'auto';
+      }
+      :global {
+        .ms-Nav-link > * > .ms-Button-icon:not(:empty) {
+          margin-left: 28px;
+        }
+      }
+  }
+
+  .label {
+    font-weight: $ms-font-weight-semibold;
+    font-size: $ms-font-size-m;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 4px;
+    vertical-align: top;
+    display: inline-block;
+  }
+  .navOverride {
+    :global {
+      .ms-Nav-link > * > .ms-Button-icon:not(:empty) {
+        margin-left: 28px;
+      }
+    }
+    
+  }
+  .navTest{
+    background: yellow;
+  }
+
+  .emptyButtonSpace{
+    padding-top: 30px;
+  }
+}

@@ -1,0 +1,60 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.gridControl { 
+
+  .container {
+    max-width: 500px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  } 
+
+    .label {
+      font-weight: $ms-font-weight-semibold;
+      font-size: $ms-font-size-m;
+      height: 32px;
+      line-height: 32px;
+      margin: 0 4px;
+      vertical-align: top;
+      display: inline-block;
+  }
+}
+
+.searchBox{
+  display: flex;  
+  flex-direction:row;
+  justify-content:flex-end;
+  padding-left: 100px;
+}
+
+.modalContainer {
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  flex-flow: column nowrap;
+  overflow: auto;
+}
+
+.close{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+// .stickyContainer {
+//   width: 80vw;
+//   display: flex;
+//   flex-flow: column nowrap;
+//   align-items: stretch;
+// }
+
+.header {
+  flex: 1 1 auto;
+  background: $ms-color-themePrimary;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  @include ms-font-l;
+  @include ms-fontWeight-semibold;
+  padding: 0 28px;
+  min-height: 40px;
+}
